@@ -1,0 +1,152 @@
+{
+  "landingPage": {
+    "welcome": {
+      "title": "Welcome to Hanuman Caterers",
+      "subtitle": "Authentic Flavors, Exceptional Service",
+      "description": "Experience the divine taste of traditional Indian cuisine crafted with love and devotion. From intimate gatherings to grand celebrations, we make every occasion memorable."
+    },
+    "aboutUs": {
+      "title": "About Us",
+      "description": "With over 15 years of experience, Hanuman Caterers has been serving authentic Indian cuisine that brings families and communities together. Our commitment to quality ingredients, traditional recipes, and exceptional service has made us the trusted choice for countless celebrations across Mumbai.",
+      "highlights": [
+        "15+ Years of Experience",
+        "1000+ Happy Events",
+        "Authentic Traditional Recipes",
+        "Fresh Quality Ingredients"
+      ]
+    },
+    "advertising": {
+      "title": "Special Offers",
+      "mainOffer": {
+        "title": "Wedding Season Special",
+        "description": "Book your wedding catering now and get 15% off on all packages above ₹50,000",
+        "validity": "Valid till December 2025"
+      },
+      "services": [
+        "Corporate Events",
+        "Wedding Catering",
+        "Birthday Parties",
+        "Religious Ceremonies",
+        "Home Delivery"
+      ]
+    },
+    "footer": {
+      "contact": {
+        "phone": "+91 98765 43210",
+        "email": "contact@hanumancaterers.com",
+        "address": "123 Food Street, Andheri West, Mumbai 400058"
+      },
+      "socialLinks": {
+        "facebook": "https://facebook.com/hanumancaterers",
+        "instagram": "https://instagram.com/hanumancaterers",
+        "twitter": "https://twitter.com/hanumancaterers"
+      }
+    }
+  },
+  "menu": [
+    {
+      "category": "Starters",
+      "items": [
+        {
+          "name": "Paneer Tikka",
+          "image": "/images/menu-items/paneer-tikka.jpeg",
+          "description": "Marinated cottage cheese cubes grilled to perfection with aromatic spices",
+          "price": "₹280"
+        },
+        {
+          "name": "Veg Spring Roll",
+          "image": "/images/menu-items/spring-roll.jpeg",
+          "description": "Crispy golden rolls filled with fresh vegetables and served with tangy sauce",
+          "price": "₹180"
+        },
+        {
+          "name": "Chicken Seekh Kebab",
+          "image": "/images/menu-items/seekh-kebab.jpg",
+          "description": "Minced chicken seasoned with herbs and spices, grilled on skewers",
+          "price": "₹320"
+        },
+        {
+          "name": "Vegetable Samosa",
+          "image": "/images/menu-items/samosa.jpg",
+          "description": "Traditional triangular pastries filled with spiced potatoes and peas",
+          "price": "₹120"
+        }
+      ]
+    },
+    {
+      "category": "Main Course",
+      "items": [
+        {
+          "name": "Butter Chicken",
+          "image": "/images/menu-items/butter-chicken.jpeg",
+          "description": "Tender chicken in rich, creamy tomato-based curry with aromatic spices",
+          "price": "₹480"
+        },
+        {
+          "name": "Paneer Butter Masala",
+          "image": "/images/menu-items/paneer-butter-masala.jpeg",
+          "description": "Soft cottage cheese cubes in velvety tomato and cashew gravy",
+          "price": "₹380"
+        },
+        {
+          "name": "Biryani (Chicken)",
+          "image": "/images/menu-items/chicken-biryani.jpg",
+          "description": "Fragrant basmati rice layered with spiced chicken and aromatic herbs",
+          "price": "₹420"
+        },
+        {
+          "name": "Dal Tadka",
+          "image": "/images/menu-items/dal-tadka.jpg",
+          "description": "Yellow lentils tempered with cumin, garlic, and fresh coriander",
+          "price": "₹220"
+        }
+      ]
+    },
+    {
+      "category": "Desserts",
+      "items": [
+        {
+          "name": "Gulab Jamun",
+          "image": "/images/menu-items/gulab-jamun.jpg",
+          "description": "Soft milk dumplings soaked in sugar syrup flavored with cardamom",
+          "price": "₹180"
+        },
+        {
+          "name": "Ras Malai",
+          "image": "/images/menu-items/ras-malai.jpg",
+          "description": "Delicate cottage cheese balls in sweetened, thickened milk",
+          "price": "₹220"
+        },
+        {
+          "name": "Kulfi",
+          "image": "/images/menu-items/kulfi.jpg",
+          "description": "Traditional Indian ice cream flavored with cardamom and pistachios",
+          "price": "₹150"
+        }
+      ]
+    },
+    {
+      "category": "Beverages",
+      "items": [
+        {
+          "name": "Mango Lassi",
+          "image": "/images/menu-items/mango-lassi.jpg",
+          "description": "Refreshing yogurt-based drink blended with sweet mangoes",
+          "price": "₹120"
+        },
+        {
+          "name": "Masala Chai",
+          "image": "/images/menu-items/masala-chai.jpg",
+          "description": "Traditional spiced tea brewed with aromatic herbs and spices",
+          "price": "₹80"
+        },
+        {
+          "name": "Fresh Lime Soda",
+          "image": "/images/menu-items/lime-soda.jpg",
+          "description": "Refreshing lime juice with soda water and a hint of mint",
+          "price": "₹100"
+        }
+      ]
+    }
+  ]
+}
