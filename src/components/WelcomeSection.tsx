@@ -224,26 +224,7 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
           </motion.div>
         </motion.div>
 
-        {/* Enhanced Scroll Indicator */}
-        <motion.div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2.5 }}
-        >
-          <motion.div
-            className="w-8 h-12 border-2 border-white/60 rounded-full flex justify-center backdrop-blur-sm bg-white/5"
-            animate={{ opacity: [1, 0.4, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <motion.div
-              className="w-1.5 h-4 bg-white rounded-full mt-2 shadow-lg"
-              animate={{ y: [0, 16, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-          </motion.div>
-          <p className="text-white/60 text-xs mt-2 font-medium tracking-wide">SCROLL DOWN</p>
-        </motion.div>
+      
       </div>
     </section>
   );
