@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { CheckCircle, Users, Award, Heart, Utensils, Clock, Shield } from 'lucide-react';
+import {  Users, Award, Heart, Utensils, Clock, Shield } from 'lucide-react';
 
 interface AboutSectionProps {
   title: string;
@@ -9,7 +9,7 @@ interface AboutSectionProps {
   highlights: string[];
 }
 
-export default function AboutSection({ title, description, highlights }: AboutSectionProps) {
+export default function AboutSection({ title, description }: AboutSectionProps) {
   const features = [
     {
       icon: Users,
@@ -50,29 +50,29 @@ export default function AboutSection({ title, description, highlights }: AboutSe
   ];
 
   return (
-    <section id="about" className="relative py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-      {/* Background Elements */}
+    <section id="about" className="relative py-24 bg-white overflow-hidden">
+      {/* Minimal Background Elements for white background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-orange-200/20 to-red-200/20 rounded-full blur-3xl"
+          className="absolute -top-40 -right-40 w-96 h-96 bg-orange-50/30 rounded-full blur-3xl"
           animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 90, 0],
+            scale: [1, 1.1, 1],
+            rotate: [0, 45, 0],
           }}
           transition={{
-            duration: 15,
+            duration: 20,
             repeat: Infinity,
             ease: "easeInOut"
           }}
         />
         <motion.div
-          className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-orange-200/20 to-red-200/20 rounded-full blur-3xl"
+          className="absolute -bottom-40 -left-40 w-96 h-96 bg-red-50/25 rounded-full blur-3xl"
           animate={{
-            scale: [1, 1.1, 1],
-            rotate: [360, 270, 360],
+            scale: [1, 1.05, 1],
+            rotate: [360, 315, 360],
           }}
           transition={{
-            duration: 12,
+            duration: 18,
             repeat: Infinity,
             ease: "easeInOut"
           }}
@@ -127,7 +127,53 @@ export default function AboutSection({ title, description, highlights }: AboutSe
           </motion.p>
         </motion.div>
 
-      
+        {/* Features Grid */}
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          {features.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <motion.div
+                key={index}
+                className="relative group bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+              >
+                <motion.div
+                  className={`inline-flex p-4 bg-gradient-to-br ${feature.gradient} rounded-xl mb-4 shadow-lg`}
+                  whileHover={{ rotate: 5, scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <Icon className="w-6 h-6 text-white" />
+                </motion.div>
+
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">
+                  {feature.title}
+                </h3>
+                
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+
+                {/* Subtle hover effect */}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-br from-orange-50/0 to-red-50/0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(251, 146, 60, 0.03) 0%, rgba(239, 68, 68, 0.03) 100%)'
+                  }}
+                />
+              </motion.div>
+            );
+          })}
+        </motion.div>
       </div>
     </section>
   );

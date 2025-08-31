@@ -98,7 +98,7 @@ export default function LogoAnimation({ onComplete }: LogoAnimationProps) {
         className="text-center"
       >
         <motion.div
-          className="mb-4"
+          className="mb-4 "
           initial={{ rotateY: 0 }}
           animate={{ rotateY: 360 }}
           transition={{
@@ -108,13 +108,15 @@ export default function LogoAnimation({ onComplete }: LogoAnimationProps) {
             ease: "easeInOut"
           }}
         >
-          <Image
-            src="/images/hanuman-logo.jpeg"   
-            alt="Hanuman Caterers Logo"
-            width={120}       
-            height={120}
-            className="mx-auto rounded-full" 
-          />
+          <div className="relative w-20 h-20 md:w-28 md:h-28 mx-auto">
+            <Image
+              src="/images/hanuman-logo.jpeg"
+              alt="Hanuman Caterers Logo"
+              fill
+              className="rounded-full object-cover"
+            />
+          </div>
+
         </motion.div>
 
         <motion.h1

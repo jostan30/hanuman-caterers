@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MenuCategory from '@/components/MenuCategory';
 import { Search, Filter } from 'lucide-react';
@@ -79,7 +78,7 @@ export default function MenuPage() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <Header />
+     
 
       {/* Hero Section */}
 <section className="relative flex items-center justify-center min-h-[60vh] bg-gradient-to-br from-orange-500 via-orange-600 to-red-500 overflow-hidden px-4 py-16 sm:py-24">

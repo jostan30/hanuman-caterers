@@ -17,7 +17,7 @@ export default function Header() {
   ];
 
   return (
-    <motion.header 
+    <motion.header
       className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-gray-100/50 shadow-sm"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -33,10 +33,10 @@ export default function Header() {
               className="w-12 h-12 relative overflow-hidden rounded-full ring-2 ring-orange-100 group-hover:ring-orange-300 transition-all duration-300"
             >
               <Image
-                src="/images/hanuman-logo.jpeg" 
+                src="/images/hanuman-logo.jpeg"
                 alt="Hanuman Caterers Logo"
-                fill   
-                className="object-cover" 
+                fill
+                className="object-cover"
               />
             </motion.div>
 
@@ -72,19 +72,27 @@ export default function Header() {
               </motion.div>
             ))}
           </div>
-            
+
           {/* Call to Action */}
           <div className="hidden lg:flex items-center space-x-4">
             <motion.a
               href="tel:+919876543210"
-              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="text-black px-4 py-2  font-semibold transition-all duration-300 flex items-center space-x-2 hover:shadow-xl transform hover:-translate-y-0.5"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Phone size={18} />
-              <span>Call Now</span>
+              <Image
+                src="/images/veg-logo.jpeg"
+                alt="Pure Veg Logo"
+                width={36}   // make it a little bigger
+                height={36}
+                className="object-contain"  // ensures the whole logo fits
+              />
+              <span>Pure Veg</span>
             </motion.a>
           </div>
+
+
 
           {/* Mobile Menu Button */}
           <button
@@ -128,7 +136,7 @@ export default function Header() {
                     </Link>
                   </motion.div>
                 ))}
-                
+
                 {/* Mobile Call Button */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}

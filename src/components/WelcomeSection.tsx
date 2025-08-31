@@ -8,58 +8,37 @@ interface WelcomeSectionProps {
   title: string;
   subtitle: string;
   description: string;
+   className?: string; 
 }
 
-export default function WelcomeSection({ title, subtitle, description }: WelcomeSectionProps) {
+export default function WelcomeSection({ title, subtitle, description  }: WelcomeSectionProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-600 via-red-600 to-orange-700">
-      {/* Enhanced Background with Multiple Layers */}
-              <div className="absolute inset-0">
-        {/* Base gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-black/40" />
-        
-        {/* Animated background pattern */}
-        <motion.div 
-          className="absolute inset-0 opacity-20"
-          animate={{ 
-            backgroundPosition: ['0% 0%', '100% 100%'],
-          }}
-          transition={{ 
-            duration: 20, 
-            repeat: Infinity, 
-            repeatType: 'reverse',
-            ease: "linear"
-          }}
-          style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, rgba(255,165,0,0.2) 0%, transparent 50%), 
-                             radial-gradient(circle at 75% 75%, rgba(220,38,127,0.2) 0%, transparent 50%)`
-          }}
-        />
-      </div>
-
-      {/* Enhanced Floating Elements */}
+    <section
+      className={`relative min-h-screen flex items-center justify-center overflow-hidden bg-white`}
+    >
+      {/* Minimal Background Elements for white background */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(8)].map((_, i) => (
+        {[...Array(6)].map((_, i) => (
           <motion.div
             key={i}
             className={`absolute rounded-full ${
-              i % 3 === 0 ? 'bg-white/8' : 
-              i % 3 === 1 ? 'bg-orange-300/15' : 'bg-red-300/12'
+              i % 3 === 0 ? 'bg-orange-100/30' : 
+              i % 3 === 1 ? 'bg-red-100/25' : 'bg-gray-100/20'
             }`}
             style={{
-              width: `${40 + i * 15}px`,
-              height: `${40 + i * 15}px`,
+              width: `${30 + i * 10}px`,
+              height: `${30 + i * 10}px`,
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
             }}
             animate={{
-              y: [0, -40, 0],
-              x: [0, 30, -10, 0],
-              scale: [1, 1.1, 0.9, 1],
-              rotate: [0, 180, 360],
+              y: [0, -30, 0],
+              x: [0, 20, -10, 0],
+              scale: [1, 1.05, 0.95, 1],
+              rotate: [0, 90, 180, 360],
             }}
             transition={{
-              duration: 8 + i * 2,
+              duration: 12 + i * 2,
               repeat: Infinity,
               ease: "easeInOut",
               delay: i * 0.5,
@@ -79,13 +58,13 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
         >
           {/* Premium Badge */}
           <motion.div 
-            className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-6"
+            className="inline-flex items-center space-x-2 bg-orange-50 border border-orange-200 rounded-full px-6 py-3 mb-6"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <Sparkles className="w-5 h-5 text-yellow-300" />
-            <span className="text-white font-medium">Premium Catering Experience</span>
+            <Sparkles className="w-5 h-5 text-orange-500" />
+            <span className="text-orange-700 font-medium">Premium Catering Experience</span>
           </motion.div>
 
           {/* Enhanced Rating Stars */}
@@ -95,7 +74,7 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            <div className="flex items-center space-x-1 bg-white/10 backdrop-blur-md rounded-full px-4 py-2">
+            <div className="flex items-center space-x-1 bg-gray-50 border border-gray-200 rounded-full px-4 py-2">
               {[...Array(5)].map((_, i) => (
                 <motion.div
                   key={i}
@@ -103,10 +82,10 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
                   animate={{ opacity: 1, rotate: 0 }}
                   transition={{ duration: 0.5, delay: 0.9 + i * 0.1 }}
                 >
-                  <Star className="w-5 h-5 text-yellow-300 fill-current drop-shadow-sm" />
+                  <Star className="w-5 h-5 text-yellow-500 fill-current drop-shadow-sm" />
                 </motion.div>
               ))}
-              <span className="ml-2 text-white font-medium text-sm">5.0 Rating</span>
+              <span className="ml-2 text-gray-700 font-medium text-sm">5.0 Rating</span>
             </div>
           </motion.div>
 
@@ -117,14 +96,14 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.8 }}
           >
-            <span className="bg-gradient-to-r from-white via-orange-100 to-yellow-200 bg-clip-text text-transparent drop-shadow-2xl">
+            <span className="bg-gradient-to-r from-gray-800 via-orange-600 to-red-600 bg-clip-text text-transparent drop-shadow-sm">
               {title}
             </span>
           </motion.h1>
 
           {/* Enhanced Subtitle */}
           <motion.h2 
-            className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 text-orange-100 max-w-4xl mx-auto leading-relaxed"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 text-gray-700 max-w-4xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
@@ -134,7 +113,7 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
 
           {/* Enhanced Description */}
           <motion.p 
-            className="text-lg sm:text-xl lg:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed text-orange-50/90 font-medium"
+            className="text-lg sm:text-xl lg:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed text-gray-600 font-medium"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.4 }}
@@ -151,7 +130,7 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
           >
             <Link href="/menu">
               <motion.button
-                className="relative overflow-hidden bg-white text-orange-600 px-10 py-4 rounded-full font-bold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center space-x-3 group min-w-[200px]"
+                className="relative overflow-hidden bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full font-bold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center space-x-3 group min-w-[200px]"
                 whileHover={{ 
                   scale: 1.05,
                   y: -2,
@@ -172,16 +151,16 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
 
             <motion.a
               href="tel:+919876543210"
-              className="relative overflow-hidden border-2 border-white/50 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 backdrop-blur-sm transition-all duration-300 min-w-[200px]"
+              className="relative overflow-hidden border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition-all duration-300 min-w-[200px]"
               whileHover={{ 
                 scale: 1.05,
                 y: -2,
-                borderColor: 'rgba(255,255,255,0.8)'
+                borderColor: 'rgba(156, 163, 175, 0.8)'
               }}
               whileTap={{ scale: 0.95 }}
             >
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-100/50 to-transparent"
                 initial={{ x: '-100%' }}
                 whileHover={{ x: '100%' }}
                 transition={{ duration: 0.6 }}
@@ -192,14 +171,14 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
 
           {/* Trust Indicators */}
           <motion.div
-            className="mt-12 flex flex-wrap justify-center items-center gap-8 text-orange-200/80"
+            className="mt-12 flex flex-wrap justify-center items-center gap-8 text-gray-500"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 2 }}
           >
             <div className="flex items-center space-x-2">
               <motion.div 
-                className="w-2 h-2 bg-green-400 rounded-full"
+                className="w-2 h-2 bg-green-500 rounded-full"
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
               />
@@ -207,7 +186,7 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
             </div>
             <div className="flex items-center space-x-2">
               <motion.div 
-                className="w-2 h-2 bg-blue-400 rounded-full"
+                className="w-2 h-2 bg-blue-500 rounded-full"
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
               />
@@ -215,7 +194,7 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
             </div>
             <div className="flex items-center space-x-2">
               <motion.div 
-                className="w-2 h-2 bg-purple-400 rounded-full"
+                className="w-2 h-2 bg-purple-500 rounded-full"
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity, delay: 1 }}
               />

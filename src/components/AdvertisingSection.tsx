@@ -1,8 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Sparkles, Calendar, Gift, Users, Utensils, Home, Star, Phone, CheckCircle } from 'lucide-react';
-import ScrollCards from './ScrollCard';
+import { Sparkles,  Gift, Star,  } from 'lucide-react';
 
 interface AdvertisingSectionProps {
   title: string;
@@ -14,14 +13,7 @@ interface AdvertisingSectionProps {
   services: string[];
 }
 
-export default function AdvertisingSection({ title, mainOffer, services }: AdvertisingSectionProps) {
-  const serviceIcons = [
-    { name: 'Corporate Events', icon: Users, color: 'from-blue-500 to-indigo-500' },
-    { name: 'Wedding Catering', icon: Gift, color: 'from-pink-500 to-rose-500' },
-    { name: 'Birthday Parties', icon: Calendar, color: 'from-purple-500 to-violet-500' },
-    { name: 'Religious Ceremonies', icon: Sparkles, color: 'from-yellow-500 to-orange-500' },
-    { name: 'Home Delivery', icon: Home, color: 'from-green-500 to-emerald-500' },
-  ];
+export default function AdvertisingSection({ title, mainOffer }: AdvertisingSectionProps) {
   const servicesList = [
     {
       name: "Buffet Catering",
