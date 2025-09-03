@@ -101,16 +101,7 @@ export default function MenuPage() {
           />
         </div>
       </div>
-
-      {/* Footer for Mobile only */}
-      <div className="lg:hidden">
-        {contentData && (
-          <Footer
-            contact={contentData.landingPage.footer.contact}
-            socialLinks={contentData.landingPage.footer.socialLinks}
-          />
-        )}
-      </div>
+     
     </>
   );
 }
