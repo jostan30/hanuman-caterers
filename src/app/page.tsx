@@ -11,6 +11,7 @@ import {
 } from '@/types/content';
 import FindUs from '@/components/FindUs';
 import ImageCarousel from '@/components/ImageCarousel';
+import Header from '@/components/Header';
 
 export default function Home() {
   const [showLogoAnimation, setShowLogoAnimation] = useState(true);
@@ -110,7 +111,7 @@ export default function Home() {
             className="relative"
           >
             {/* Enhanced Header with scroll detection */}
-           
+           <Header/>
 
             <main className="relative">
               {/* Section 1: Welcome & About - Pure White Background */}
