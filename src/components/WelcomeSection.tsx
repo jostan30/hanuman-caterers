@@ -292,15 +292,6 @@ export default function WelcomeSection({ title, subtitle, description }: Welcome
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent lg:hidden" />
             </div>
 
-            {/* Mobile swipe instruction */}
-            <motion.p
-              className="text-center text-gray-500 text-xs sm:text-sm mt-3 sm:mt-4 md:hidden"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 2 }}
-            >
-              Swipe to browse images
-            </motion.p>
           </motion.div>
 
         </div>
