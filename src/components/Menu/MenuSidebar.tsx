@@ -38,10 +38,13 @@ export function MenuSidebar({
       {/* Back Button */}
       <div className={`${padding} border-b border-orange-500`}>
         <div className={`${isMobile ? 'w-12 h-12' : 'w-14 h-14'} bg-orange-800/30 rounded-xl flex items-center justify-center cursor-pointer hover:bg-orange-800/50 transition-all duration-200`}>
-          <StepBack
-            className="w-6 h-6 text-white"
+          <button className="w-6 h-6 text-white">
+
+          <StepBack 
+            
             onClick={() => router.push('/')}
-          />
+            />
+            </button>
         </div>
       </div>
 

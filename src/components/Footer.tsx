@@ -6,7 +6,6 @@ import {  Phone, Mail, MapPin, Clock, Award, Users, Heart } from 'lucide-react';
 interface FooterProps {
   contact: {
     phone: string;
-    email: string;
     address: string;
   };
   socialLinks: {
@@ -107,66 +106,12 @@ export default function Footer({ contact }: FooterProps) {
             Making every occasion memorable with our traditional recipes and professional service.
           </motion.p>
 
-          {/* Achievement Stats */}
-          <motion.div
-            className="flex flex-wrap justify-center gap-8 mt-8"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            {achievements.map((achievement, index) => {
-              const Icon = achievement.icon;
-              return (
-                <motion.div
-                  key={index}
-                  className="text-center"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                >
-                  <div className="flex items-center justify-center space-x-2 mb-1">
-                    <Icon className={`w-5 h-5 ${achievement.color}`} />
-                    <span className="text-2xl font-bold text-white">{achievement.count}</span>
-                  </div>
-                  <p className="text-sm text-gray-400">{achievement.label}</p>
-                </motion.div>
-              );
-            })}
-          </motion.div>
         </motion.div>
 
         {/* Middle Section - Main Footer Content */}
         <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
-            {/* Quick Links */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="space-y-4"
-            >
-              <h4 className="text-xl font-bold text-white mb-6 relative">
-                Quick Links
-                <motion.div
-                  className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-orange-400 to-red-400 rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: '60px' }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
-                />
-              </h4>
-              <div className="space-y-3">
-                {quickLinks.map((link, index) => (
-                  <motion.a
-                    key={index}
-                    href={link.href}
-                    className="block text-gray-300 hover:text-orange-400 transition-colors duration-300 hover:translate-x-1 transform"
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                  >
-                    {link.name}
-                  </motion.a>
-                ))}
-              </div>
-            </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-24">
+        
 
             {/* Contact Information */}
             <motion.div
@@ -203,22 +148,6 @@ export default function Footer({ contact }: FooterProps) {
                   </div>
                 </motion.a>
 
-                <motion.a
-                  href={`mailto:${contact.email}`}
-                  className="flex items-center space-x-3 text-gray-300 hover:text-orange-400 transition-colors group"
-                  whileHover={{ x: 5 }}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.7 }}
-                >
-                  <div className="p-2 bg-red-500/20 rounded-lg group-hover:bg-red-500/30 transition-colors">
-                    <Mail size={16} />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-400">Email Us</p>
-                    <p className="font-medium">{contact.email}</p>
-                  </div>
-                </motion.a>
 
                 <motion.div
                   className="flex items-start space-x-3 text-gray-300"
@@ -320,24 +249,10 @@ export default function Footer({ contact }: FooterProps) {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
               © 2025 Hanuman Caterers. All rights reserved.
             </p>
-            <div className="flex items-center space-x-2 text-gray-400 text-sm">
-              <span>Made with</span>
-              <motion.div
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 1, repeat: Infinity }}
-              >
-                <Heart className="w-4 h-4 text-red-400 fill-current" />
-              </motion.div>
-              <span>for food lovers</span>
-            </div>
-            <div className="flex space-x-6 text-sm">
-              <a href="#privacy" className="text-gray-400 hover:text-orange-400 transition-colors">Privacy Policy</a>
-              <a href="#terms" className="text-gray-400 hover:text-orange-400 transition-colors">Terms of Service</a>
-            </div>
           </div>
         </motion.div>
       </div>

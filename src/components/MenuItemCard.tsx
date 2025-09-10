@@ -7,12 +7,11 @@ import { Star } from 'lucide-react';
 interface MenuItemCardProps {
   name: string;
   image: string;
-  description: string;
-  price: string;
+  description: string,
   index: number;
 }
 
-export default function MenuItemCard({ name, image, description, price, index }: MenuItemCardProps) {
+export default function MenuItemCard({ name, image, description,  index }: MenuItemCardProps) {
   return (
     <motion.div
       className="bg-white rounded-2xl shadow-lg overflow-hidden card-hover-glow group cursor-pointer"
@@ -44,17 +43,6 @@ export default function MenuItemCard({ name, image, description, price, index }:
         <motion.div 
           className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         />
-
-        {/* Price Badge */}
-        <motion.div
-          className="absolute top-4 right-4 bg-primary-500 text-white px-3 py-1 rounded-full font-bold shadow-lg"
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-          whileHover={{ scale: 1.1 }}
-        >
-          {price}
-        </motion.div>
 
         {/* Rating */}
         <motion.div

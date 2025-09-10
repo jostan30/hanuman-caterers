@@ -74,13 +74,8 @@ export default function Header() {
           </div>
 
           {/* Call to Action */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <motion.a
-              href="tel:+919876543210"
-              className="text-black px-4 py-2  font-semibold transition-all duration-300 flex items-center space-x-2 hover:shadow-xl transform hover:-translate-y-0.5"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+          <div className="hidden lg:flex items-center space-x-4 text-black">
+        
               <Image
                 src="/images/veg-logo.jpeg"
                 alt="Pure Veg Logo"
@@ -89,7 +84,7 @@ export default function Header() {
                 className="object-contain"  // ensures the whole logo fits
               />
               <span>Pure Veg</span>
-            </motion.a>
+           
           </div>
 
 
@@ -138,21 +133,18 @@ export default function Header() {
                 ))}
 
                 {/* Mobile Call Button */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.4 }}
-                  className="pt-4 border-t border-gray-100 mt-4"
-                >
-                  <a
-                    href="tel:+919876543210"
-                    className="flex items-center justify-center space-x-2 w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <Phone size={18} />
-                    <span>Call Now</span>
-                  </a>
-                </motion.div>
+                <div className="flex items-center space-x-4">
+                 
+                    <Image
+                      src="/images/veg-logo.jpeg"
+                      alt="Pure Veg Logo"
+                      width={18}   // make it a little bigger
+                      height={18}
+                      className="object-contain"  // ensures the whole logo fits
+                    />
+                    <span>Pure Veg</span>
+
+                </div>
               </div>
             </motion.div>
           )}

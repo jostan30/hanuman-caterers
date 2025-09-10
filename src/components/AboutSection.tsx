@@ -50,7 +50,7 @@ export default function AboutSection({ title, description }: AboutSectionProps) 
   ];
 
   return (
-    <section id="about" className="relative py-24 bg-white overflow-hidden">
+    <section id="about" className="relative py-15 bg-white overflow-hidden">
       {/* Minimal Background Elements for white background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -80,25 +80,23 @@ export default function AboutSection({ title, description }: AboutSectionProps) 
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <motion.div 
+            className="w-32 h-1.5 bg-gradient-to-r from-orange-400 to-red-500 mx-auto rounded-full mb-8"
+            initial={{ width: 0 }}
+            whileInView={{ width: 128 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          />
+
         {/* Section Header */}
         <motion.div
           className="text-center mb-20"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <motion.div
-            className="inline-block mb-4"
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold tracking-wide uppercase">
-              About Us
-            </span>
-          </motion.div>
-
+    
           <motion.h2 
             className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight"
             initial={{ opacity: 0, y: 30 }}
@@ -110,12 +108,7 @@ export default function AboutSection({ title, description }: AboutSectionProps) 
             </span>
           </motion.h2>
 
-          <motion.div 
-            className="w-32 h-1.5 bg-gradient-to-r from-orange-400 to-red-500 mx-auto rounded-full mb-8"
-            initial={{ width: 0 }}
-            whileInView={{ width: 128 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-          />
+        
 
           <motion.p 
             className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-4xl mx-auto font-medium"

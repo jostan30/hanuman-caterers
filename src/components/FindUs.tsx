@@ -5,7 +5,6 @@ import { MapPin, Phone, Clock, Navigation, Car, Train } from "lucide-react";
 
 export default function FindUs() {
   const transportOptions = [
-    { icon: Car, label: "Free Parking Available", detail: "On-site parking for 10+ vehicles" },
     { icon: Train, label: "Andheri Station", detail: "15 minutes walk from station" },
     { icon: Navigation, label: "Easy Navigation", detail: "Well-connected by all major roads" }
   ];
@@ -94,31 +93,7 @@ export default function FindUs() {
               </div>
             </div>
 
-            {/* Business Hours Card */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-start space-x-4">
-                <div className="p-3 bg-gradient-to-br from-orange-600 to-red-600 rounded-xl shadow-lg">
-                  <Clock className="w-6 h-6 text-white" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Business Hours</h3>
-                  <div className="space-y-2 text-gray-600">
-                    <div className="flex justify-between">
-                      <span>Monday - Saturday</span>
-                      <span className="font-medium">9:00 AM - 10:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Sunday</span>
-                      <span className="font-medium">10:00 AM - 9:00 PM</span>
-                    </div>
-                  </div>
-                  <div className="mt-3 inline-flex items-center space-x-2 bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                    <span>Currently Open</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
 
             {/* Transport Options */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

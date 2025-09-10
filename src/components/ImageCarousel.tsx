@@ -91,7 +91,6 @@ export default function ImageCarousel({ className }: ImageCarouselProps) {
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   
   // Image and content animations based on scroll
-  const imageScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.1, 1.2]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [1, 1, 1, 0.8]);
 
   return (
@@ -101,7 +100,7 @@ export default function ImageCarousel({ className }: ImageCarouselProps) {
         "relative",
         className
       )}
-      style={{ height: `${cards.length *40}vh` }} // Make section tall enough for all cards
+      style={{ height: `${cards.length *38}vh` }} // Make section tall enough for all cards
     >
       {/* Absolute Background (contained within section) */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#E63946] via-[#FF6B00] to-[#FFF8F0]">

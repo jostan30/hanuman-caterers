@@ -7,7 +7,6 @@ interface MenuItem {
   name: string;
   image: string;
   description: string;
-  price: string;
 }
 
 interface MenuCategoryProps {
@@ -66,7 +65,6 @@ export default function MenuCategory({ category, items, categoryIndex }: MenuCat
             name={item.name}
             image={item.image}
             description={item.description}
-            price={item.price}
             index={itemIndex}
           />
         ))}

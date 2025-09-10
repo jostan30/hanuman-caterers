@@ -32,9 +32,8 @@
     },
     "footer": {
       "contact": {
-        "phone": "+91 93227 46054",
-        "email": "contact@hanumancaterers.com",
-        "address": "123 Food Street, Andheri West, Mumbai 400058"
+        "phone": "+91 98206 69011",
+        "address": "Shop No. 1, Tripta Sadan Blug ,Shanta Wadi J.P.Road, Mahar, Andheri West, Mumbai, Maharashtra 400058"
       },
       "socialLinks": {
         "facebook": "https://facebook.com/hanumancaterers",
@@ -49,27 +48,28 @@
       "items": [
         {
           "name": "Paneer Tikka",
-          "image": "/images/menu-items/paneer-tikka.jpeg",
-          "description": "Marinated cottage cheese cubes grilled to perfection with aromatic spices",
-          "price": "₹280"
+          "image": "/images/menu-items/starter/paneer-tikka.jpeg",
+          "description": "Marinated cottage cheese cubes grilled to perfection with aromatic spices"
         },
         {
           "name": "Veg Spring Roll",
-          "image": "/images/menu-items/spring-roll.jpeg",
-          "description": "Crispy golden rolls filled with fresh vegetables and served with tangy sauce",
-          "price": "₹180"
-        },
-        {
-          "name": "Chicken Seekh Kebab",
-          "image": "/images/menu-items/seekh-kebab.jpg",
-          "description": "Minced chicken seasoned with herbs and spices, grilled on skewers",
-          "price": "₹320"
+          "image": "/images/menu-items/starter/spring-roll.jpeg",
+          "description": "Crispy golden rolls filled with fresh vegetables and served with tangy sauce"
         },
         {
           "name": "Vegetable Samosa",
-          "image": "/images/menu-items/samosa.jpg",
-          "description": "Traditional triangular pastries filled with spiced potatoes and peas",
-          "price": "₹120"
+          "image": "/images/menu-items/starter/samosa.jpeg",
+          "description": "Traditional triangular pastries filled with spiced potatoes and peas"
+        },
+        {
+          "name": "Hara Bhara Kebab",
+          "image": "/images/menu-items/starter/hara-bhara-kebab.jpeg",
+          "description": "Spinach and green pea patties blended with Indian spices"
+        },
+        {
+          "name": "Chilli Paneer (Dry)",
+          "image": "/images/menu-items/starter/chilli-paneer.jpeg",
+          "description": "Cottage cheese tossed with bell peppers, onion, and spicy sauces"
         }
       ]
     },
@@ -77,28 +77,29 @@
       "category": "Main Course",
       "items": [
         {
-          "name": "Butter Chicken",
-          "image": "/images/menu-items/butter-chicken.jpeg",
-          "description": "Tender chicken in rich, creamy tomato-based curry with aromatic spices",
-          "price": "₹480"
-        },
-        {
           "name": "Paneer Butter Masala",
-          "image": "/images/menu-items/paneer-butter-masala.jpeg",
-          "description": "Soft cottage cheese cubes in velvety tomato and cashew gravy",
-          "price": "₹380"
-        },
-        {
-          "name": "Biryani (Chicken)",
-          "image": "/images/menu-items/chicken-biryani.jpg",
-          "description": "Fragrant basmati rice layered with spiced chicken and aromatic herbs",
-          "price": "₹420"
+          "image": "/images/menu-items/maincourse/paneer-butter-masala.jpeg",
+          "description": "Soft cottage cheese cubes in velvety tomato and cashew gravy"
         },
         {
           "name": "Dal Tadka",
-          "image": "/images/menu-items/dal-tadka.jpg",
-          "description": "Yellow lentils tempered with cumin, garlic, and fresh coriander",
-          "price": "₹220"
+          "image": "/images/menu-items/maincourse/dal-tadka.jpeg",
+          "description": "Yellow lentils tempered with cumin, garlic, and fresh coriander"
+        },
+        {
+          "name": "Chole Bhature",
+          "image": "/images/menu-items/maincourse/chole-bhature.jpeg",
+          "description": "Spiced chickpeas served with fluffy fried bread"
+        },
+        {
+          "name": "Veg Biryani",
+          "image": "/images/menu-items/maincourse/veg-biryani.jpeg",
+          "description": "Aromatic basmati rice cooked with vegetables and Indian spices"
+        },
+        {
+          "name": "Aloo Gobi Masala",
+          "image": "/images/menu-items/maincourse/aloo-gobi.jpeg",
+          "description": "Cauliflower and potatoes cooked with Indian spices and herbs"
         }
       ]
     },
@@ -107,21 +108,31 @@
       "items": [
         {
           "name": "Gulab Jamun",
-          "image": "/images/menu-items/gulab-jamun.jpg",
-          "description": "Soft milk dumplings soaked in sugar syrup flavored with cardamom",
-          "price": "₹180"
+          "image": "/images/menu-items/dessert/gulab-jamun.jpeg",
+          "description": "Soft milk dumplings soaked in sugar syrup flavored with cardamom"
         },
         {
           "name": "Ras Malai",
-          "image": "/images/menu-items/ras-malai.jpg",
-          "description": "Delicate cottage cheese balls in sweetened, thickened milk",
-          "price": "₹220"
+          "image": "/images/menu-items/dessert/ras-malai.jpeg",
+          "description": "Delicate cottage cheese balls in sweetened, thickened milk"
+        
         },
         {
           "name": "Kulfi",
-          "image": "/images/menu-items/kulfi.jpg",
-          "description": "Traditional Indian ice cream flavored with cardamom and pistachios",
-          "price": "₹150"
+          "image": "/images/menu-items/dessert/kulfi.jpeg",
+          "description": "Traditional Indian ice cream flavored with cardamom and pistachios"
+        },
+        {
+          "name": "Kaju Katli",
+          "image": "/images/menu-items/dessert/kaju-katli.jpeg",
+          "description": "Classic Indian sweet made with cashews and sugar"
+       
+        },
+        {
+          "name": "Jalebi",
+          "image": "/images/menu-items/dessert/jalebi.jpeg",
+          "description": "Crispy, golden spirals soaked in saffron-infused sugar syrup"
+       
         }
       ]
     },
@@ -130,23 +141,36 @@
       "items": [
         {
           "name": "Mango Lassi",
-          "image": "/images/menu-items/mango-lassi.jpg",
-          "description": "Refreshing yogurt-based drink blended with sweet mangoes",
-          "price": "₹120"
+          "image": "/images/menu-items/beverage/mango-lassi.jpeg",
+          "description": "Refreshing yogurt-based drink blended with sweet mangoes"
+       
         },
         {
           "name": "Masala Chai",
-          "image": "/images/menu-items/masala-chai.jpg",
-          "description": "Traditional spiced tea brewed with aromatic herbs and spices",
-          "price": "₹80"
+          "image": "/images/menu-items/beverage/masala-chai.jpeg",
+          "description": "Traditional spiced tea brewed with aromatic herbs and spices"
+         
         },
         {
           "name": "Fresh Lime Soda",
-          "image": "/images/menu-items/lime-soda.jpg",
-          "description": "Refreshing lime juice with soda water and a hint of mint",
-          "price": "₹100"
+          "image": "/images/menu-items/beverage/lime-soda.jpeg",
+          "description": "Refreshing lime juice with soda water and a hint of mint"
+         
+        },
+        {
+          "name": "Cold Coffee",
+          "image": "/images/menu-items/beverage/cold-coffee.jpeg",
+          "description": "Chilled coffee blended with milk and ice cream"
+         
+        },
+        {
+          "name": "Sweet Lassi",
+          "image": "/images/menu-items/beverage/sweet-lassi.jpeg",
+          "description": "Traditional Punjabi yogurt drink, sweetened and chilled"
+          
         }
       ]
     }
   ]
 }
+

@@ -6,13 +6,11 @@ import { Phone, MessageCircle, X, Grip, Mail } from 'lucide-react';
 interface FloatingContactProps {
   phoneNumber?: string;
   whatsappNumber?: string;
-  email?: string;
 }
 
 export default function FloatingContact({ 
-  phoneNumber = "+91 93227 46054",
-  whatsappNumber = "+919322746054",
-  email = "contact@example.com"
+  phoneNumber = "+91 98206 69011",
+  whatsappNumber = "+919820669011"
 }: FloatingContactProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -106,9 +104,6 @@ export default function FloatingContact({
     window.open(`https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${message}`, '_blank');
   };
 
-  const handleEmailContact = () => {
-    window.open(`mailto:${email}?subject=Catering Inquiry`, '_self');
-  };
 
   return (
     <>
@@ -255,25 +250,6 @@ export default function FloatingContact({
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 />
-              </motion.button>
-
-              {/* Email */}
-              <motion.button
-                onClick={handleEmailContact}
-                className="w-full flex items-center space-x-4 p-4 bg-gradient-to-r from-orange-50 to-orange-100 hover:from-orange-100 hover:to-orange-200 rounded-2xl transition-all duration-300 group"
-                whileHover={{ scale: 1.02, x: 5 }}
-                whileTap={{ scale: 0.98 }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-              >
-                <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Mail className="w-6 h-6 text-white" />
-                </div>
-                <div className="flex-1 text-left">
-                  <p className="font-semibold text-gray-800">Email Us</p>
-                  <p className="text-sm text-gray-600">{email}</p>
-                </div>
               </motion.button>
             </div>
 
