@@ -20,7 +20,7 @@ export default function Footer({ contact }: FooterProps) {
 
   const achievements = [
     { icon: Users, count: "500+", label: "Happy Clients", color: "text-blue-400" },
-    { icon: Award, count: "15+", label: "Years Experience", color: "text-yellow-400" },
+    { icon: Award, count: "50+", label: "Years Experience", color: "text-yellow-400" },
     { icon: Heart, count: "1000+", label: "Events Catered", color: "text-red-400" },
   ];
 
@@ -102,7 +102,7 @@ export default function Footer({ contact }: FooterProps) {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Serving authentic Indian cuisine with love and devotion for over 15 years. 
+            Serving authentic Indian cuisine with love and devotion for over 50 years. 
             Making every occasion memorable with our traditional recipes and professional service.
           </motion.p>
 
@@ -143,7 +143,7 @@ export default function Footer({ contact }: FooterProps) {
                     <Phone size={16} />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Call Us</p>
+                    <p className="text-sm text-gray-400">Call Dhiraj Devda</p>
                     <p className="font-medium">{contact.phone}</p>
                   </div>
                 </motion.a>
@@ -200,14 +200,7 @@ export default function Footer({ contact }: FooterProps) {
                 </div>
               </div>
 
-              <motion.div
-                className="inline-flex items-center space-x-2 bg-green-500/20 border border-green-500/30 rounded-full px-4 py-2 mt-4"
-                animate={{ scale: [1, 1.02, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span className="text-green-300 text-sm font-medium">Currently Open</span>
-              </motion.div>
+            
             </motion.div>
           </div>
         </div>
