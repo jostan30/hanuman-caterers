@@ -109,9 +109,6 @@ function MenuItemCard({ item, index, isMobile }: { item: MenuItem; index: number
       <div className="text-center">
         <h3 className="text-lg font-bold text-gray-800 mb-1">{item.name}</h3>
         <p className="text-orange-600 font-bold text-lg mb-3">{item.price}</p>
-        <p className="text-gray-600 text-xs leading-relaxed line-clamp-2 px-2">
-          {item.description}
-        </p>
       </div>
     </motion.div>
   );

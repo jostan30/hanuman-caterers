@@ -48,28 +48,83 @@
       "items": [
         {
           "name": "Paneer Tikka",
-          "image": "/images/menu-items/starter/paneer-tikka.jpeg",
-          "description": "Marinated cottage cheese cubes grilled to perfection with aromatic spices"
+          "image": "/images/menu-items/starter/paneer-tikka.jpeg"
         },
         {
           "name": "Veg Spring Roll",
-          "image": "/images/menu-items/starter/spring-roll.jpeg",
-          "description": "Crispy golden rolls filled with fresh vegetables and served with tangy sauce"
+          "image": "/images/menu-items/starter/spring-roll.jpeg"
         },
         {
           "name": "Vegetable Samosa",
-          "image": "/images/menu-items/starter/samosa.jpeg",
-          "description": "Traditional triangular pastries filled with spiced potatoes and peas"
+          "image": "/images/menu-items/starter/samosa.jpeg"
         },
         {
           "name": "Hara Bhara Kebab",
-          "image": "/images/menu-items/starter/hara-bhara-kebab.jpeg",
-          "description": "Spinach and green pea patties blended with Indian spices"
+          "image": "/images/menu-items/starter/hara-bhara-kebab.jpeg"
         },
         {
           "name": "Chilli Paneer (Dry)",
-          "image": "/images/menu-items/starter/chilli-paneer.jpeg",
-          "description": "Cottage cheese tossed with bell peppers, onion, and spicy sauces"
+          "image": "/images/menu-items/starter/chilli-paneer.jpeg"
+        },
+        {
+          "name": "Aloo Tikki",
+          "image": "/images/menu-items/starter/aloo-tikki.jpeg"
+        },
+        {
+          "name": "Vegetable Cutlet",
+          "image": "/images/menu-items/starter/veg-cutlet.jpeg"
+        },
+        {
+          "name": "Gobi Manchurian",
+          "image": "/images/menu-items/starter/gobi-manchurian.jpeg"
+        },
+        {
+          "name": "Paneer 65",
+          "image": "/images/menu-items/starter/paneer-65.jpeg"
+        },
+        {
+          "name": "Stuffed Mushrooms",
+          "image": "/images/menu-items/starter/stuffed-mushrooms.jpeg"
+        },
+        {
+          "name": "Corn Cheese Balls",
+          "image": "/images/menu-items/starter/corn-cheese-balls.jpeg"
+        },
+        {
+          "name": "Vegetable Pakora",
+          "image": "/images/menu-items/starter/veg-pakora.jpeg"
+        },
+        {
+          "name": "Tandoori Aloo",
+          "image": "/images/menu-items/starter/tandoori-aloo.jpeg"
+        },
+        {
+          "name": "Cheese Garlic Bread",
+          "image": "/images/menu-items/starter/cheese-garlic-bread.jpeg"
+        },
+        {
+          "name": "Veg Momos",
+          "image": "/images/menu-items/starter/veg-momos.jpeg"
+        },
+        {
+          "name": "Papdi Chaat",
+          "image": "/images/menu-items/starter/papdi-chaat.jpeg"
+        },
+        {
+          "name": "Dahi Bhalla",
+          "image": "/images/menu-items/starter/dahi-bhalla.jpeg"
+        },
+        {
+          "name": "Vegetable Platter",
+          "image": "/images/menu-items/starter/veg-platter.jpeg"
+        },
+        {
+          "name": "Crispy Corn",
+          "image": "/images/menu-items/starter/crispy-corn.jpeg"
+        },
+        {
+          "name": "Paneer Kathi Roll",
+          "image": "/images/menu-items/starter/paneer-kathi-roll.jpeg"
         }
       ]
     },
@@ -78,28 +133,83 @@
       "items": [
         {
           "name": "Paneer Butter Masala",
-          "image": "/images/menu-items/maincourse/paneer-butter-masala.jpeg",
-          "description": "Soft cottage cheese cubes in velvety tomato and cashew gravy"
+          "image": "/images/menu-items/maincourse/paneer-butter-masala.jpeg"
         },
         {
           "name": "Dal Tadka",
-          "image": "/images/menu-items/maincourse/dal-tadka.jpeg",
-          "description": "Yellow lentils tempered with cumin, garlic, and fresh coriander"
+          "image": "/images/menu-items/maincourse/dal-tadka.jpeg"
         },
         {
           "name": "Chole Bhature",
-          "image": "/images/menu-items/maincourse/chole-bhature.jpeg",
-          "description": "Spiced chickpeas served with fluffy fried bread"
+          "image": "/images/menu-items/maincourse/chole-bhature.jpeg"
         },
         {
           "name": "Veg Biryani",
-          "image": "/images/menu-items/maincourse/veg-biryani.jpeg",
-          "description": "Aromatic basmati rice cooked with vegetables and Indian spices"
+          "image": "/images/menu-items/maincourse/veg-biryani.jpeg"
         },
         {
           "name": "Aloo Gobi Masala",
-          "image": "/images/menu-items/maincourse/aloo-gobi.jpeg",
-          "description": "Cauliflower and potatoes cooked with Indian spices and herbs"
+          "image": "/images/menu-items/maincourse/aloo-gobi.jpeg"
+        },
+        {
+          "name": "Paneer Makhani",
+          "image": "/images/menu-items/maincourse/paneer-makhani.jpeg"
+        },
+        {
+          "name": "Rajma Chawal",
+          "image": "/images/menu-items/maincourse/rajma-chawal.jpeg"
+        },
+        {
+          "name": "Kadai Paneer",
+          "image": "/images/menu-items/maincourse/kadai-paneer.jpeg"
+        },
+        {
+          "name": "Mixed Vegetable Curry",
+          "image": "/images/menu-items/maincourse/mixed-veg-curry.jpeg"
+        },
+        {
+          "name": "Palak Paneer",
+          "image": "/images/menu-items/maincourse/palak-paneer.jpeg"
+        },
+        {
+          "name": "Veg Pulao",
+          "image": "/images/menu-items/maincourse/veg-pulao.jpeg"
+        },
+        {
+          "name": "Dal Makhani",
+          "image": "/images/menu-items/maincourse/dal-makhani.jpeg"
+        },
+        {
+          "name": "Bhindi Masala",
+          "image": "/images/menu-items/maincourse/bhindi-masala.jpeg"
+        },
+        {
+          "name": "Veg Fried Rice",
+          "image": "/images/menu-items/maincourse/veg-fried-rice.jpeg"
+        },
+        {
+          "name": "Paneer Tikka Masala",
+          "image": "/images/menu-items/maincourse/paneer-tikka-masala.jpeg"
+        },
+        {
+          "name": "Mushroom Curry",
+          "image": "/images/menu-items/maincourse/mushroom-curry.jpeg"
+        },
+        {
+          "name": "Veg Kofta Curry",
+          "image": "/images/menu-items/maincourse/veg-kofta-curry.jpeg"
+        },
+        {
+          "name": "Jeera Rice",
+          "image": "/images/menu-items/maincourse/jeera-rice.jpeg"
+        },
+        {
+          "name": "Malai Kofta",
+          "image": "/images/menu-items/maincourse/malai-kofta.jpeg"
+        },
+        {
+          "name": "Veg Thali",
+          "image": "/images/menu-items/maincourse/veg-thali.jpeg"
         }
       ]
     },
@@ -108,31 +218,63 @@
       "items": [
         {
           "name": "Gulab Jamun",
-          "image": "/images/menu-items/dessert/gulab-jamun.jpeg",
-          "description": "Soft milk dumplings soaked in sugar syrup flavored with cardamom"
+          "image": "/images/menu-items/dessert/gulab-jamun.jpeg"
         },
         {
           "name": "Ras Malai",
-          "image": "/images/menu-items/dessert/ras-malai.jpeg",
-          "description": "Delicate cottage cheese balls in sweetened, thickened milk"
-        
+          "image": "/images/menu-items/dessert/ras-malai.jpeg"
         },
         {
           "name": "Kulfi",
-          "image": "/images/menu-items/dessert/kulfi.jpeg",
-          "description": "Traditional Indian ice cream flavored with cardamom and pistachios"
+          "image": "/images/menu-items/dessert/kulfi.jpeg"
         },
         {
           "name": "Kaju Katli",
-          "image": "/images/menu-items/dessert/kaju-katli.jpeg",
-          "description": "Classic Indian sweet made with cashews and sugar"
-       
+          "image": "/images/menu-items/dessert/kaju-katli.jpeg"
         },
         {
           "name": "Jalebi",
-          "image": "/images/menu-items/dessert/jalebi.jpeg",
-          "description": "Crispy, golden spirals soaked in saffron-infused sugar syrup"
-       
+          "image": "/images/menu-items/dessert/jalebi.jpeg"
+        },
+        {
+          "name": "Gajar Ka Halwa",
+          "image": "/images/menu-items/dessert/gajar-ka-halwa.jpeg"
+        },
+        {
+          "name": "Kheer",
+          "image": "/images/menu-items/dessert/kheer.jpeg"
+        },
+        {
+          "name": "Motichoor Laddu",
+          "image": "/images/menu-items/dessert/motichoor-laddu.jpeg"
+        },
+        {
+          "name": "Vanilla Ice Cream",
+          "image": "/images/menu-items/dessert/vanilla-ice-cream.jpeg"
+        },
+        {
+          "name": "Chocolate Brownie",
+          "image": "/images/menu-items/dessert/chocolate-brownie.jpeg"
+        },
+        {
+          "name": "Malai Kulfi",
+          "image": "/images/menu-items/dessert/malai-kulfi.jpeg"
+        },
+        {
+          "name": "Coconut Barfi",
+          "image": "/images/menu-items/dessert/coconut-barfi.jpeg"
+        },
+        {
+          "name": "Soan Papdi",
+          "image": "/images/menu-items/dessert/soan-papdi.jpeg"
+        },
+        {
+          "name": "Fruit Salad",
+          "image": "/images/menu-items/dessert/fruit-salad.jpeg"
+        },
+        {
+          "name": "Kesari",
+          "image": "/images/menu-items/dessert/kesari.jpeg"
         }
       ]
     },
@@ -141,36 +283,65 @@
       "items": [
         {
           "name": "Mango Lassi",
-          "image": "/images/menu-items/beverage/mango-lassi.jpeg",
-          "description": "Refreshing yogurt-based drink blended with sweet mangoes"
-       
+          "image": "/images/menu-items/beverage/mango-lassi.jpeg"
         },
         {
           "name": "Masala Chai",
-          "image": "/images/menu-items/beverage/masala-chai.jpeg",
-          "description": "Traditional spiced tea brewed with aromatic herbs and spices"
-         
+          "image": "/images/menu-items/beverage/masala-chai.jpeg"
         },
         {
           "name": "Fresh Lime Soda",
-          "image": "/images/menu-items/beverage/lime-soda.jpeg",
-          "description": "Refreshing lime juice with soda water and a hint of mint"
-         
+          "image": "/images/menu-items/beverage/lime-soda.jpeg"
         },
         {
           "name": "Cold Coffee",
-          "image": "/images/menu-items/beverage/cold-coffee.jpeg",
-          "description": "Chilled coffee blended with milk and ice cream"
-         
+          "image": "/images/menu-items/beverage/cold-coffee.jpeg"
         },
         {
           "name": "Sweet Lassi",
-          "image": "/images/menu-items/beverage/sweet-lassi.jpeg",
-          "description": "Traditional Punjabi yogurt drink, sweetened and chilled"
-          
+          "image": "/images/menu-items/beverage/sweet-lassi.jpeg"
+        },
+        {
+          "name": "Fresh Orange Juice",
+          "image": "/images/menu-items/beverage/orange-juice.jpeg"
+        },
+        {
+          "name": "Coconut Water",
+          "image": "/images/menu-items/beverage/coconut-water.jpeg"
+        },
+        {
+          "name": "Buttermilk",
+          "image": "/images/menu-items/beverage/buttermilk.jpeg"
+        },
+        {
+          "name": "Lemon Tea",
+          "image": "/images/menu-items/beverage/lemon-tea.jpeg"
+        },
+        {
+          "name": "Mint Mojito",
+          "image": "/images/menu-items/beverage/mint-mojito.jpeg"
+        },
+        {
+          "name": "Watermelon Juice",
+          "image": "/images/menu-items/beverage/watermelon-juice.jpeg"
+        },
+        {
+          "name": "Green Tea",
+          "image": "/images/menu-items/beverage/green-tea.jpeg"
+        },
+        {
+          "name": "Iced Tea",
+          "image": "/images/menu-items/beverage/iced-tea.jpeg"
+        },
+        {
+          "name": "Pineapple Juice",
+          "image": "/images/menu-items/beverage/pineapple-juice.jpeg"
+        },
+        {
+          "name": "Rose Milk",
+          "image": "/images/menu-items/beverage/rose-milk.jpeg"
         }
       ]
     }
   ]
 }
-
